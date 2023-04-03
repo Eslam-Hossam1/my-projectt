@@ -1,0 +1,129 @@
+:root{
+    --main-color: rgb(136, 182, 255, 0.637);
+    --sec--main--color: rgb(24, 109, 245);
+}
+
+body{
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    background-color: var(--main-color);
+    width: 100%;
+}
+nav,.logo,ul,li{
+    height: 35px;
+    display: inline-block;
+    line-height: 0.3;
+    font-weight: bold;
+}
+.logo{
+    padding-left: 10px;
+    font-size: 20px;
+}
+li{
+    margin-left: 15px;
+}
+
+.checkboxDiv{
+    margin-right: 20px;
+}
+.link{
+    text-decoration: none;
+    color: var(--sec--main--color);
+}
+.link:visited{
+    text-decoration: none;
+    color: var(--sec--main--color);
+}
+.link:hover{
+    font-size: 16px;
+    background-color: rgb(225, 0, 255);
+    color: #fff;
+    transition: 0.3s;
+    text-transform: capitalize;
+    background-size: 40px 20px;
+    border-radius: 0%;
+}
+form{
+    margin-left: 38%;
+    margin-top: 128px;
+    height: 290px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color) ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 300px;
+}
+label{
+    color: var(--sec--main--color);
+}
+#lab1{
+    margin-top: 30px;
+    margin-right: 155px;
+}
+#lab2{
+    margin-top: 20px;
+    margin-right: 155px;
+}
+#check{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+#fname,#lname{
+    padding-left: 5px;
+    width: 230px;
+    height: 25px;
+    border-radius: 5px;
+    color: var(--sec--main--color);
+    background-color: #eee;
+    font-weight: 600;
+}
+#checkLink{
+    color: rgb(61, 52, 190);
+    font-weight: 900;
+    font-style: italic;
+}
+#sub{
+    margin-top: 20px;
+    background-color: #eee;
+    color: var(--sec--main--color);
+    width: 86px;
+    height: 44px;
+    font-size: 17px;
+    border: 1px solid rgb(85 131 205);
+    border-radius: 8px;
+    font-weight: bold;
+}
+#sub:hover{
+    background-color: royalblue;
+    color: #fff;
+    transition: 0.3s;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+footer p{
+    padding-left: 10px;
+}
+#checkLink:hover{
+    color: #fff;
+    background-color: rgb(225, 0, 255);
+    transition: 0.3s;
+}
+form input[type="text"]:invalid {
+    border: 2px solid red;
+}
+form input[type="text"]:valid {
+    border: 2px solid rgb(27 109 241 / 84%);
+}
